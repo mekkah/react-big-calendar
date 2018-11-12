@@ -40,7 +40,7 @@
     "prepublishOnly": "npm run build",
     "prettier": "prettier '**/*js' !examples/bundle.js '!lib/**' --write ",
     "precommit": "lint-staged",
-    "postinstall": "yarn install"
+    "postinstall": "yarn install --ignore-engines && rm -rf ./node_modules"
   },
   "lint-staged": {
     "src/**/*.js": "eslint",
