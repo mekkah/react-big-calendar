@@ -39,8 +39,7 @@
     "release": "rollout",
     "prepublishOnly": "npm run build",
     "prettier": "prettier '**/*js' !examples/bundle.js '!lib/**' --write ",
-    "precommit": "lint-staged",
-    "postinstall": "npm run build && rm -rf ./node_modules"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "src/**/*.js": "eslint",
